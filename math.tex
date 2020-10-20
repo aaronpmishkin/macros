@@ -2,6 +2,9 @@
 %% Maintainer: Aaron Mishkin <amishkin@cs.ubc.ca>
 %% Original Source: Mark Schmidt (UBC CS), Ben Bloem-Reddy (UBC Stats).
 
+%% Easy bold-face 
+
+\def\bfA{\mathbf{A}}
 \def\bfB{\mathbf{B}}
 \def\bfC{\mathbf{C}}
 \def\bfD{\mathbf{D}}
@@ -109,6 +112,9 @@
 \DeclarePairedDelimiter{\floor}{\lfloor}{\rfloor}
 \newcommand{\argdot}{{\,\vcenter{\hbox{\tiny$\bullet$}}\,}} %generic argument dot
 
+% absolute value
+\newcommand{\abs}[1]{\left\vert #1\right\vert} 
+
 \newcommand{\seq}[1]{\rbr{#1}}
 
 % easy bracketing:
@@ -162,6 +168,14 @@
 \newcommand{\wkk}{w_{k+1}}
 \newcommand{\wopt}{w^*}
 \newcommand{\wbar}{\bar{w}}
+
+
+\newcommand{\x}{x}
+\newcommand{\xk}{x_k}
+\newcommand{\xkk}{x_{k+1}}
+\newcommand{\xopt}{x^*}
+\newcommand{\xbar}{\xbar{w}}
+
 % noise
 \newcommand{\Z}{Z}
 \newcommand{\z}{z}
@@ -199,3 +213,11 @@
 \newcommand{\sgc}{\rho}
 \newcommand{\wgc}{\alpha}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%% Etc %%  
+
+%% add numbers to align* environments.
+\newcommand{\addnumber}{\addtocounter{equation}{1}\tag{\theequation}}
+
+%%%%%%%%%
