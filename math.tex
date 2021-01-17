@@ -100,12 +100,23 @@
 %% Floor and Ceiling %%
 \usepackage{mathtools} % required for \DeclarePairedDelimeter
 
-% almost surely equal:
-\def\equas{\stackrel{\text{\rm\tiny a.s.}}{=}}
-% equal in distribution:
-\def\equdist{\stackrel{\text{\rm\tiny dist}}{=}}
+%% Stochastic Relations %% 
+
+% almost sure:
+\newcommand{\as}[1]{\stackrel{\text{\rm\tiny a.s.}}{#1}}
+% a.s.\ equality:
+\newcommand{\equas}{\stackrel{\text{\rm\tiny a.s.}}{=}}
+
+% in distribution:
+\newcommand{\dist}[1]{\stackrel{\text{\rm\tiny dist}}{#1}}
+% equality in distribution:
+\newcommand{\equdist}{\stackrel{\text{\rm\tiny dist}}{=}}
+
 % independent
 \newcommand{\ind}[0]{\perp \!\!\! \perp }
+
+%% Variance, Expectation, etc %%
+\newcommand{\Var}[1]{\textbf{Var}\sbr{#1}}
 
 % ceiling and floor
 \DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
