@@ -91,11 +91,12 @@
 %% Theorem Environments %%
 \usepackage{amsthm}
 \usepackage{thmtools, thm-restate}
-\declaretheorem{theorem}
-\declaretheorem{lemma}
-\declaretheorem{definition}
-\declaretheorem{corollary}
-\declaretheorem{example}
+\declaretheorem[numberwithin=section]{theorem}
+\declaretheorem[numberwithin=section]{lemma}
+\declaretheorem[numberwithin=section]{definition}
+\declaretheorem[numberwithin=section]{corollary}
+\declaretheorem[numberwithin=section]{example}
+\declaretheorem[numbered=no]{remark}
 
 %% Floor and Ceiling %%
 \usepackage{mathtools} % required for \DeclarePairedDelimeter
@@ -124,7 +125,7 @@
 \newcommand{\argdot}{{\,\vcenter{\hbox{\tiny$\bullet$}}\,}} %generic argument dot
 
 % absolute value
-\newcommand{\abs}[1]{\left\vert #1\right\vert} 
+\newcommand{\abs}[1]{\left\vert #1\right\vert}
 
 \newcommand{\seq}[1]{\rbr{#1}}
 
