@@ -91,9 +91,12 @@
 %% Theorem Environments %%
 \usepackage{amsthm}
 \usepackage{thmtools, thm-restate}
+
 \declaretheorem[numberwithin=section]{theorem}
+\declaretheorem[numberwithin=section]{proposition}
 \declaretheorem[numberwithin=section]{lemma}
 \declaretheorem[numberwithin=section]{definition}
+\declaretheorem[numberwithin=section]{assumption}
 \declaretheorem[numberwithin=section]{corollary}
 \declaretheorem[numberwithin=section]{example}
 \declaretheorem[numbered=no]{remark}
@@ -154,6 +157,7 @@
 \newcommand{\inv}[1]{\frac{1}{#1}}
 \newcommand{\halved}[1]{\frac{#1}{2}}
 \newcommand{\R}{\mathbb{R}}
+\newcommand{\eR}{\bar{\mathbb{R}}}
 
 \newcommand{\into}{\rightarrow}
 
@@ -184,6 +188,7 @@
 
 \newcommand{\x}{x}
 \newcommand{\xk}{x_k}
+\newcommand{\xkplus}{x_k^+}
 \newcommand{\xkk}{x_{k+1}}
 \newcommand{\xopt}{x^*}
 \newcommand{\xbar}{\xbar{w}}
